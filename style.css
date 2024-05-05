@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#shopp{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carro{
+	height: auto;
+	width: 290px;
+	background: rgb(97, 97, 97);
+	position:fixed;
+	left: 75%;
+	top: 20%;
+	display: block;
+    -webkit-box-shadow: 0px 20px 47px -17px #800080;
+    -moz-box-shadow: 0px 20px 47px -17px #800080;
+    box-shadow: 0px 20px 47px -17px #800080;
+}
+
+.sumaTotal{
+	background: #800080;
+    height: 50px;
+    width: 100%;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+.carro h2{
+	padding: 5%;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 2em;
+}
+
+.carro p{
+	padding: 5%;
+	height: auto;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1em;
+}
+
+.carro p li{
+	height: 30px;
+	text-align: center;
+	width: 100%;
+	list-style: none;
+	font-size: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.carro p li button{
+	height: 25px;
+	width: 25px;
+}
+
+.carro p li:nth-child(2n){
+background-color: whitesmoke;
+}
+
+.botonCompra{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.botonCompra button{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	height: 30px;
+	width: 85px;
+	border: solid black 1px;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.botonCompra button:hover{
+	transition: .5s ease-in-out;
+	background: black;
+	color: white;
+}
+
+.barraNavegacion{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.botones{
+	height: 100px;
+	width: 20%;
+	margin: 0 auto;
+	background: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#buscadorBar{
+	height: 50px;
+	width: 100%;
+	background: purple;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#buscadorBar input:first-child{
+	height: 30px;
+	width: 50%;
+	font-size: 1.3em;
+}
+
+#buscadorBar input:nth-child(2){
+	margin-left: 10px;
+	height: 30px;
+	width: 50px;
+	font-size: 1.3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navBarShopp {
+	height: 100px;
+	width: 80%;
+	margin: 0 auto;
+	background: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#navBarShopp button, .botones button {
+	height: 50px;
+	width: 110px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#navBarShopp button:hover, .botones button:hover{
+	transition: .5s ease-in-out;
+	letter-spacing: 3px;
+	background: yellow;
+	color: blue;
+}
+
+#listaShopp {
+	height: auto;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#listaShopp img {
+	height: 200px;
+	width: 200px;
+	aspect-ratio: 1/1;
+	object-position: center;
+}
+
+#listaShopp li {
+	display: flex;
+	height: 200px;
+	margin-top: 40px;
+	-webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+#listaShopp li:nth-child(2n) {
+	background-color: whitesmoke;
+}
+
+#listaShopp li:nth-child(2n-1) {
+	background-color: grey;
+}
+
+#listaShopp div {
+	height: 50px;
+	width: 100%;
+}
+
+#listaShopp h3 {
+	padding-left: 10px;
+	height: 30%;
+	display: flex;
+	align-items: center;
+}
+
+#listaShopp p {
+	height: 60%;
+	padding: 10px;
+	text-align: justify;
+	display: flex;
+	align-items: center;
+
+}
+
+#listaShopp div div {
+	height: 50%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+}
+
+#listaShopp button {
+	height: 40px;
+	width: 50px;
+	border: 1px solid black;
+	background: whitesmoke;
+	border-radius: 10px;
+}
+
+
+.foot{
+    height: 200px;
+}
