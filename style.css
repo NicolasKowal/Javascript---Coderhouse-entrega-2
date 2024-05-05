@@ -1,35 +1,36 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-#shopp{
-    width: 80%;
-    margin: 0 auto;
+#shopp {
+	width: 80%;
+	margin: 0 auto;
 }
 
-.carro{
+.carro {
 	height: auto;
 	width: 290px;
 	background: rgb(97, 97, 97);
-	position:fixed;
+	position: fixed;
 	left: 75%;
 	top: 20%;
 	display: block;
-    -webkit-box-shadow: 0px 20px 47px -17px #800080;
-    -moz-box-shadow: 0px 20px 47px -17px #800080;
-    box-shadow: 0px 20px 47px -17px #800080;
+    -webkit-box-shadow: 0px 30px 24px -10px #800080;
+    -moz-box-shadow: 0px 30px 24px -10px #800080;
+    box-shadow: 0px 30px 24px -10px #800080;
+
 }
 
-.sumaTotal{
+.sumaTotal {
 	background: #800080;
-    height: 50px;
-    width: 100%;
+	height: 50px;
+	width: 100%;
 	letter-spacing: 3px;
 	font-weight: bold;
 }
-.carro h2{
+.carro h2 {
 	padding: 5%;
 	height: 50px;
 	width: 100%;
@@ -40,10 +41,10 @@
 	font-size: 2em;
 }
 
-.carro p{
+.carro p {
 	padding: 5%;
 	height: auto;
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -51,7 +52,7 @@
 	font-size: 1em;
 }
 
-.carro p li{
+.carro p li {
 	height: 30px;
 	text-align: center;
 	width: 100%;
@@ -62,16 +63,16 @@
 	align-items: center;
 }
 
-.carro p li button{
+.carro p li button {
 	height: 25px;
 	width: 25px;
 }
 
-.carro p li:nth-child(2n){
-background-color: whitesmoke;
+.carro p li:nth-child(2n) {
+	background-color: whitesmoke;
 }
 
-.botonCompra{
+.botonCompra {
 	height: 50px;
 	width: 100%;
 	display: flex;
@@ -79,10 +80,10 @@ background-color: whitesmoke;
 	align-items: center;
 }
 
-.botonCompra button{
+.botonCompra button {
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	height: 30px;
 	width: 85px;
 	border: solid black 1px;
@@ -90,19 +91,19 @@ background-color: whitesmoke;
 	text-transform: uppercase;
 }
 
-.botonCompra button:hover{
-	transition: .5s ease-in-out;
+.botonCompra button:hover {
+	transition: 0.5s ease-in-out;
 	background: black;
 	color: white;
 }
 
-.barraNavegacion{
+.barraNavegacion {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 }
 
-.botones{
+.botones {
 	height: 100px;
 	width: 20%;
 	margin: 0 auto;
@@ -112,7 +113,7 @@ background-color: whitesmoke;
 	align-items: center;
 }
 
-#buscadorBar{
+#buscadorBar {
 	height: 50px;
 	width: 100%;
 	background: purple;
@@ -121,13 +122,13 @@ background-color: whitesmoke;
 	justify-content: center;
 }
 
-#buscadorBar input:first-child{
+#buscadorBar input:first-child {
 	height: 30px;
 	width: 50%;
 	font-size: 1.3em;
 }
 
-#buscadorBar input:nth-child(2){
+#buscadorBar input:nth-child(2) {
 	margin-left: 10px;
 	height: 30px;
 	width: 50px;
@@ -147,15 +148,17 @@ background-color: whitesmoke;
 	align-items: center;
 }
 
-#navBarShopp button, .botones button {
+#navBarShopp button,
+.botones button {
 	height: 50px;
 	width: 110px;
 	font-size: 1em;
 	font-weight: bold;
 }
 
-#navBarShopp button:hover, .botones button:hover{
-	transition: .5s ease-in-out;
+#navBarShopp button:hover,
+.botones button:hover {
+	transition: 0.5s ease-in-out;
 	letter-spacing: 3px;
 	background: yellow;
 	color: blue;
@@ -192,32 +195,32 @@ background-color: whitesmoke;
 }
 
 #listaShopp div {
-	height: 50px;
+	height: 200px;
 	width: 100%;
 }
 
 #listaShopp h3 {
 	padding-left: 10px;
-	height: 30%;
+	height: 35%;
 	display: flex;
 	align-items: center;
 }
 
 #listaShopp p {
-	height: 60%;
+	height: 35%;
 	padding: 10px;
 	text-align: justify;
 	display: flex;
 	align-items: center;
-
 }
 
 #listaShopp div div {
-	height: 50%;
+	height: 30%;
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	width: 100%;
-
 }
 
 #listaShopp button {
@@ -228,7 +231,6 @@ background-color: whitesmoke;
 	border-radius: 10px;
 }
 
-
-.foot{
-    height: 200px;
+.foot {
+	height: 200px;
 }
