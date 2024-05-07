@@ -10,16 +10,17 @@
 }
 
 .carro {
-	height: auto;
+	min-height: 300px;
 	width: 290px;
 	background: rgb(97, 97, 97);
 	position: fixed;
 	left: 75%;
 	top: 20%;
 	display: block;
-    -webkit-box-shadow: 0px 30px 24px -10px #800080;
-    -moz-box-shadow: 0px 30px 24px -10px #800080;
-    box-shadow: 0px 30px 24px -10px #800080;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
+	-moz-box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
+	box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
 
 }
 
@@ -116,7 +117,7 @@
 #buscadorBar {
 	height: 50px;
 	width: 100%;
-	background: purple;
+	background: #800080;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -175,15 +176,18 @@
 	width: 200px;
 	aspect-ratio: 1/1;
 	object-position: center;
+	border-radius: 10px 0px 0px 10px;
 }
 
 #listaShopp li {
 	display: flex;
 	height: 200px;
 	margin-top: 40px;
-	-webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
+	-moz-box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
+	box-shadow: 0px 20px 20px -2px rgba(128,0,128,0.5);
+	border-radius: 10px 10px 10px 10px;
+
 }
 
 #listaShopp li:nth-child(2n) {
@@ -191,7 +195,7 @@
 }
 
 #listaShopp li:nth-child(2n-1) {
-	background-color: grey;
+	background-color: #808080;
 }
 
 #listaShopp div {
@@ -204,12 +208,13 @@
 	height: 35%;
 	display: flex;
 	align-items: center;
+	letter-spacing: 5px;
 }
 
 #listaShopp p {
 	height: 35%;
 	padding: 20px;
-	font-size: 1.1em;
+	font-size: 1em;
 	text-align: justify;
 	display: flex;
 	align-items: center;

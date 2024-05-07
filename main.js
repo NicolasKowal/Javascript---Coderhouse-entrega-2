@@ -114,18 +114,22 @@ function shopping() {
 		let barraBuscar = document.querySelector("#barraBuscar");
 		let botonBuscar = document.querySelector("#buscarLista");
 
-		botonBuscar.addEventListener("click", () => {
+		function Filtrar(){
 			let contenidoBarraBuscar = barraBuscar.value;
-			let listaBuscada = productos.filter((producto) =>
-				producto.nombre
-					.toLowerCase()
-					.includes(contenidoBarraBuscar.toLowerCase())
-			);
+			let listaBuscada = productos.filter((producto) => producto.nombre.toLowerCase().includes(contenidoBarraBuscar.toLowerCase()));
 			mostrarLista(listaBuscada);
+		}
+
+		botonBuscar.addEventListener("click", Filtrar);
+
+		barraBuscar.addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				Filtrar();
+			}
 		});
 	};
 
-	botonH.addEventListener("click", () => mostrarLista(productos));
+	
 
 	const crearNav = () => {
 		barraNav.innerHTML = "";
@@ -134,18 +138,19 @@ function shopping() {
 			return categorias.indexOf(item) === index;
 		});
 
+		const Filtrar = () => {
+			let listaFiltrada = productos.filter(
+				(producto) => producto.categoria === nuevoBoton.textContent
+			);
+			mostrarLista(listaFiltrada);
+		};
+
 		categoriasFilter.forEach((categoria) => {
 			let nuevoBoton = document.createElement("button");
 			nuevoBoton.textContent = categoria;
 			barraNav.appendChild(nuevoBoton);
 
-			nuevoBoton.addEventListener("click", () => {
-				let listaFiltrada = productos.filter(
-					(producto) => producto.categoria === nuevoBoton.textContent
-				);
-				console.log(listaFiltrada);
-				mostrarLista(listaFiltrada);
-			});
+			nuevoBoton.addEventListener("click", Filtrar);
 		});
 	};
 
