@@ -79,6 +79,8 @@ function shopping() {
 	let listaCompra = document.querySelector(".cantidad");
 	let totalSuma = document.querySelector(".sumaTotal");
 
+	botonH.addEventListener("click", () => mostrarLista(productos));
+
 	if (localStorage.getItem('carrito')) {
 		carritoDeCompras = JSON.parse(localStorage.getItem('carrito'));
 		let totalGuardado = JSON.parse(localStorage.getItem('total'));
@@ -150,7 +152,13 @@ function shopping() {
 			nuevoBoton.textContent = categoria;
 			barraNav.appendChild(nuevoBoton);
 
-			nuevoBoton.addEventListener("click", Filtrar);
+			nuevoBoton.addEventListener("click", () => {
+				let listaFiltrada = productos.filter(
+					(producto) => producto.categoria === nuevoBoton.textContent
+				);
+				console.log(listaFiltrada);
+				mostrarLista(listaFiltrada);
+			});
 		});
 	};
 
