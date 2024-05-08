@@ -140,13 +140,6 @@ function shopping() {
 			return categorias.indexOf(item) === index;
 		});
 
-		const Filtrar = () => {
-			let listaFiltrada = productos.filter(
-				(producto) => producto.categoria === nuevoBoton.textContent
-			);
-			mostrarLista(listaFiltrada);
-		};
-
 		categoriasFilter.forEach((categoria) => {
 			let nuevoBoton = document.createElement("button");
 			nuevoBoton.textContent = categoria;
@@ -156,7 +149,6 @@ function shopping() {
 				let listaFiltrada = productos.filter(
 					(producto) => producto.categoria === nuevoBoton.textContent
 				);
-				console.log(listaFiltrada);
 				mostrarLista(listaFiltrada);
 			});
 		});
